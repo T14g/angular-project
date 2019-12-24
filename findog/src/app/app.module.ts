@@ -6,6 +6,7 @@ import { UserComponent } from './user/user.component';
 import { DogsLostComponent } from './dogs-lost/dogs-lost.component';
 import { DogsFoundComponent } from './dogs-found/dogs-found.component';
 import { DogsComponent } from './dogs/dogs.component';
+import { DogsService } from './dogs/dogs.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { DogsComponent } from './dogs/dogs.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DogsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

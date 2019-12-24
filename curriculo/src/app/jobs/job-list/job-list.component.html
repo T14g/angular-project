@@ -1,0 +1,9 @@
+<ul>
+  <app-job-item
+  *ngFor="let jobEl of jobs"
+  [job]="jobEl"
+  (jobSelected)="onJobSelected(jobEl)"
+  ></app-job-item>
+</ul>
+
+
